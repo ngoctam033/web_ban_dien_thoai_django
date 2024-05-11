@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/favicon' %}" />
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- owl carousel libraries -->
+    <link rel="stylesheet" href="{% static 'js/owlcarousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/owlcarousel/owl.theme.default.min.css' %}">
+    <script src="{% static 'js/Jquery/Jquery.min.js' %}"></script>
+    <script src="{% static 'js/owlcarousel/owl.carousel.min.js' %}"></script>
+    <!-- tidio - live chat -->
+    <!-- <script src="//code.tidio.co/bfiiplaaohclhqwes5xivoizqkq56guu.js"></script> -->
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topnav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/banner.css' %}">
+    <link rel="stylesheet" href="{% static 'css/taikhoan.css' %}">
+    <link rel="stylesheet" href="{% static 'css/trangchu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home_products.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/baohanh.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lienhe.css' %}">
+    <link rel="stylesheet" href="{% static 'css/chitietsanpham.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gioHang.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nguoidung.css' %}">
+     <!-- js -->
+     <script src="{% static 'js/getProduct.js' %}"></script>
+     <script src="{% static 'js/search.js' %}"></script>
+     
+     <script src="{% static 'js/account.js' %}"></script>
+
+     <script src="{% static 'js/cart.js' %}"></script>
+
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'js/filter.js' %}"></script>
+</body>
+
+</html>

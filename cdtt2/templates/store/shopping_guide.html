@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Hướng dẫn mua sắm
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+ {% include 'top_nav.html' %}
+    <!-- thêm header -->
+ {% include 'header.html' %}
+
+ {% load static %}
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <article>
+      <h1>Hướng dẫn mua sắm điện thoại thông minh</h1>
+      <p class="text-muted">Ngày đăng: 9 tháng 4, 2024</p>
+      <a target="_blank" href="{% static 'img/shopping_guide/shopping_guide.jpg' %}">
+        <img src="{% static 'img/shopping_guide/shopping_guide.jpg' %}" alt="Hướng dẫn mua sắm điện thoại thông minh" class="img-fluid mb-4">
+      </a> 
+      <p>
+        Bạn đang muốn mua một chiếc điện thoại thông minh mới nhưng không biết bắt đầu từ đâu? Trong hướng dẫn này, chúng
+        tôi sẽ giúp bạn tìm hiểu về các yếu tố cần xem xét khi mua điện thoại và cung cấp một số gợi ý để bạn có thể chọn
+        một chiếc điện thoại phù hợp với nhu cầu của mình.
+      </p>
+      <h2>1. Xác định nhu cầu của bạn</h2>
+      <p>
+        Trước khi bắt đầu mua sắm, hãy xác định rõ nhu cầu của bạn. Bạn cần một chiếc điện thoại cho công việc hay giải
+        trí? Bạn quan tâm đến camera, hiệu năng, hoặc thời lượng pin? Việc hiểu rõ nhu cầu của bạn sẽ giúp bạn hạn chế sự
+        lựa chọn và tìm kiếm một cách hiệu quả.
+      </p>
+      <h2>2. Xem xét các tính năng quan trọng</h2>
+      <p>
+        Có một số tính năng quan trọng mà bạn nên xem xét khi mua điện thoại. Điều này bao gồm kích thước màn hình, camera,
+        hiệu năng, bộ nhớ, thời lượng pin và hệ điều hành. Hãy đảm bảo kiểm tra các thông số kỹ thuật của điện thoại và so sánh chúng với nhu cầu của bạn để tìm ra điện thoại phù hợp nhất.
+      </p>
+      <h2>3. Nghiên cứu và đánh giá sản phẩm</h2>
+      <p>
+        Trước khi quyết định mua, hãy nghiên cứu và đánh giá các sản phẩm điện thoại khác nhau trên thị trường. Đọc các đánh
+        giá từ người dùng và các bài viết so sánh để có cái nhìn tổng quan về các điện thoại và hiểu rõ về ưu điểm và nhược
+        điểm của chúng.
+      </p>
+      <h2>4. Đặt mục tiêu ngân sách</h2>
+      <p>
+        Xác định một ngân sách hợp lý cho mình trước khi mua sắm. Điện thoại có rất nhiều phân khúc giá khác nhau, vì vậy
+        đặt một mức giá tối đa mà bạn có thể chi trả và tìm kiếm các điện thoại trong khoảng ngân sách của bạn.
+      </p>
+      <h2>5. Tham khảo ý kiến từ người khác</h2>
+      <p>
+        Nếu bạn không chắc chắn về việc chọn một chiếc điện thoại cụ thể, hãy tham khảo ý kiến từ người khác. Bạn có thể
+        hỏi ý kiến từ bạn bè, gia đình, hoặc tham gia vào các diễn đàn trực tuyến để được tư vấn từ những người đã sử dụng
+        các mẫu điện thoại bạn quan tâm.
+      </p>
+      <p>
+        Với những bước hướng dẫn trên, hy vọng bạn đã có thể mua sắm một chiếc điện thoại thông minh phù hợp với nhu cầu
+        của mình. Hãy lựa chọn một chiếc điện thoại có chất lượng tốt và đảm bảo rằng bạn đang mua từ nhà cung cấp đáng tin
+        cậy.
+      </p>
+    </article>
+  </div>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}

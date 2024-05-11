@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% translate 'Trang chủ' %}</a>
+&rsaquo; {% translate 'Lỗi máy chủ' %}
+</div>
+{% endblock %}
+
+{% block title %}{% translate 'Lỗi máy chủ (500)' %}{% endblock %}
+
+{% block content %}
+<h1>{% translate 'Lỗi Máy Chủ <em>(500)</em>' %}</h1>
+<p>{% translate 'Đã xảy ra lỗi. Nó đã được báo cáo cho các quản trị viên trang web qua email và sẽ được sửa chữa ngay lập tức. Cảm ơn sự kiên nhẫn của bạn.' %}</p>
+
+{% endblock %}

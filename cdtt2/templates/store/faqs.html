@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Câu hỏi thường gặp
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+ {% include 'top_nav.html' %}
+    <!-- thêm header -->
+ {% include 'header.html' %}
+
+<style>
+  .container.mt-5 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .container.mt-5 h1 {
+    color: #343a40;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .container.mt-5 .question {
+    margin-bottom: 20px;
+  }
+  
+  .container.mt-5 .question h3 {
+    color: #495057;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .container.mt-5 .question p {
+    color: #495057;
+    line-height: 1.5;
+  }
+</style>
+
+<body>
+  <div class="container mt-5">
+    <h1>Câu hỏi thường gặp</h1>
+
+    <div class="question">
+      <h3>Tôi có thể thanh toán bằng những phương thức nào?</h3>
+      <p>
+        Chúng tôi chấp nhận thanh toán bằng các phương thức sau đây: thẻ tín dụng, chuyển khoản ngân hàng và thanh toán khi nhận hàng (COD).
+      </p>
+    </div>
+
+    <div class="question">
+      <h3>Bao lâu sau khi đặt hàng tôi sẽ nhận được sản phẩm?</h3>
+      <p>
+        Thời gian giao hàng thường từ 3 đến 7 ngày làm việc kể từ khi xác nhận đơn hàng. Tuy nhiên, thời gian giao hàng có thể thay đổi tùy thuộc vào địa chỉ giao hàng và phương thức vận chuyển được lựa chọn. Chúng tôi sẽ thông báo cho bạn về thời gian giao hàng cụ thể sau khi bạn hoàn tất đơn hàng.
+      </p>
+    </div>
+
+    <div class="question">
+      <h3>Chính sách đổi trả như thế nào?</h3>
+      <p>
+        Chúng tôi có chính sách đổi trả linh hoạt trong vòng 30 ngày kể từ ngày mua hàng. Để đổi trả sản phẩm, vui lòng liên hệ với chúng tôi để được hướng dẫn chi tiết về quy trình đổi trả.
+      </p>
+    </div>
+
+    <div class="question">
+      <h3>Làm thế nào để liên hệ với chúng tôi?</h3>
+      <p>
+        Bạn có thể liên hệ vớichúng tôi qua số điện thoại 123-456-789 hoặc gửi email đến nnt33@gmail.com. Chúng tôi sẽ cố gắng phản hồi sớm nhất có thể.
+      </p>
+    </div>
+  </div>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}

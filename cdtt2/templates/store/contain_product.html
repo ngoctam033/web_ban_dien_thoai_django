@@ -1,0 +1,30 @@
+{% load static %}
+<section class="header">
+    <div class="contain-products">
+        <!-- viêt một script để lọc sản phẩm theo hãng -->
+        <script>
+    
+        </script>
+        <!-- viết một hàm gọi api để lấy tât cả sản phẩm rồi sau đó in ra -->
+        <h2 >Tất cả sản phẩm</h2>
+        <ul id="products" class="homeproduct group flexContain">
+            <!-- load 10 sản phẩm đầu tiên -->
+            <script>
+                loadMoreProducts('/api/products/1')
+            </script>
+        </ul><!-- End products -->
+        <button id="loadMore" class="xemTatCa" >
+            Xem thêm
+        </button>
+        <!-- js dùng để load thêm sản phẩm -->
+        <script>
+            //viết một script cho nút xem thêm, khi click vào nút xem thêm thì sẽ gọi hàm loadMoreProducts với tham số int
+            let page = 1;
+            document.getElementById('loadMore').addEventListener('click', function () {
+                page++;
+                loadMoreProducts('/api/products/' + page + '/');
+            });
+        </script>
+        <div class="pagination"></div>
+    </div>
+</section>

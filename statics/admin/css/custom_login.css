@@ -1,0 +1,65 @@
+/* LOGIN FORM */
+
+.login {
+    background: var(--darkened-bg);
+    height: auto;
+    border-radius: 10px; /* Added border radius */
+}
+
+.login #header {
+    height: auto;
+    padding: 20px 20px; /* Increased padding */
+    justify-content: center;
+    border-bottom: 1px solid var(--hairline-color); /* Added border bottom */
+}
+
+.login #header h1 {
+    font-size: 1.5rem; /* Increased font size */
+    margin: 0;
+}
+
+.login #header h1 a {
+    color: var(--header-link-color);
+}
+
+.login #content {
+    padding: 30px 30px 0; /* Increased padding */
+}
+
+.login #container {
+    background: var(--body-bg);
+    border: 1px solid var(--hairline-color);
+    border-radius: 10px; /* Increased border radius */
+    overflow: hidden;
+    width: 30em; /* Increased width */
+    min-width: 320px; /* Increased min-width */
+    margin: 100px auto;
+    height: auto;
+}
+
+.login .form-row {
+    padding: 10px 0; /* Increased padding */
+}
+
+.login .form-row label {
+    display: block;
+    line-height: 2.5em; /* Increased line height */
+}
+
+.login .form-row #id_username, .login .form-row #id_password {
+    padding: 10px; /* Increased padding */
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px; /* Added border radius */
+}
+
+.login .submit-row {
+    padding: 2em 0 0 0; /* Increased padding */
+    margin: 0;
+    text-align: center;
+}
+
+.login .password-reset-link {
+    text-align: center;
+    font-size: 0.9em; /* Decreased font size */
+}

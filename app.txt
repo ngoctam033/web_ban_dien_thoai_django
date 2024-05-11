@@ -1,0 +1,319 @@
+2024-05-10 21:27:33,192 - INFO - This is an info message
+2024-05-10 23:32:39,097 - WARNING - Not Found: /data.json
+2024-05-10 23:34:37,253 - INFO - This is an info message
+2024-05-10 23:34:44,813 - INFO - This is an info message
+2024-05-10 23:34:48,994 - INFO - This is an info message
+2024-05-10 23:36:10,623 - ERROR - Internal Server Error: /social/complete/google-oauth2/
+Traceback (most recent call last):
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "customers_email_af8f39bb_uniq"
+DETAIL:  Key (email)=(2151040051@ut.edu.vn) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\utils.py", line 49, in wrapper
+    return func(request, backend, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\views.py", line 31, in complete
+    return do_complete(
+           ^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\actions.py", line 49, in do_complete
+    user = backend.complete(user=user, redirect_name=redirect_name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 39, in complete
+    return self.auth_complete(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\utils.py", line 253, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\oauth.py", line 427, in auth_complete
+    return self.do_auth(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\utils.py", line 253, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\oauth.py", line 440, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\strategy.py", line 104, in authenticate
+    return authenticate(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 83, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 86, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 118, in run_pipeline
+    result = func(*args, **out) or {}
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\pipeline\user.py", line 73, in create_user
+    return {"is_new": True, "user": strategy.create_user(**fields)}
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\strategy.py", line 54, in create_user
+    return self.storage.user.create_user(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\storage.py", line 97, in create_user
+    raise exc
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\storage.py", line 85, in create_user
+    user = cls.user_model()._default_manager.create_user(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "customers_email_af8f39bb_uniq"
+DETAIL:  Key (email)=(2151040051@ut.edu.vn) already exists.
+
+2024-05-10 23:50:06,746 - ERROR - Internal Server Error: /social/complete/google-oauth2/
+Traceback (most recent call last):
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "customers_email_af8f39bb_uniq"
+DETAIL:  Key (email)=(2151040051@ut.edu.vn) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\utils.py", line 49, in wrapper
+    return func(request, backend, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\views.py", line 31, in complete
+    return do_complete(
+           ^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\actions.py", line 49, in do_complete
+    user = backend.complete(user=user, redirect_name=redirect_name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 39, in complete
+    return self.auth_complete(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\utils.py", line 253, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\oauth.py", line 427, in auth_complete
+    return self.do_auth(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\utils.py", line 253, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\oauth.py", line 440, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\strategy.py", line 104, in authenticate
+    return authenticate(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 83, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 86, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\backends\base.py", line 118, in run_pipeline
+    result = func(*args, **out) or {}
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\pipeline\user.py", line 73, in create_user
+    return {"is_new": True, "user": strategy.create_user(**fields)}
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_core\strategy.py", line 54, in create_user
+    return self.storage.user.create_user(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\storage.py", line 97, in create_user
+    raise exc
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\social_django\storage.py", line 85, in create_user
+    user = cls.user_model()._default_manager.create_user(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ngoc Tam\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "customers_email_af8f39bb_uniq"
+DETAIL:  Key (email)=(2151040051@ut.edu.vn) already exists.
+
+2024-05-10 23:51:49,359 - INFO - This is an info message
+2024-05-10 23:53:26,131 - WARNING - Not Found: /admin123/
+2024-05-10 23:53:43,190 - ERROR - Customer has no linkcounter.
+2024-05-10 23:56:05,675 - ERROR - Customer has no linkcounter.
+2024-05-11 00:04:43,553 - INFO - This is an info message
+2024-05-11 00:04:44,095 - INFO - This is an info message
+2024-05-11 00:05:04,778 - INFO - This is an info message
+2024-05-11 00:05:05,161 - INFO - This is an info message
+2024-05-11 00:08:02,523 - INFO - This is an info message
+2024-05-11 00:08:02,559 - INFO - This is an info message
+2024-05-11 00:08:06,843 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cdtt2\logger.py changed, reloading.
+2024-05-11 00:08:07,310 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cdtt2\logger.py changed, reloading.
+2024-05-11 00:08:08,595 - INFO - This is an info message
+2024-05-11 00:08:08,786 - INFO - This is an info message
+2024-05-11 00:09:42,228 - ERROR - Customer has no linkcounter.
+2024-05-11 00:16:43,048 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:16:43,418 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:16:44,921 - INFO - This is an info message
+2024-05-11 00:16:45,182 - INFO - This is an info message
+2024-05-11 00:17:32,619 - INFO - This is an info message
+2024-05-11 00:18:29,711 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cart\models.py changed, reloading.
+2024-05-11 00:18:29,946 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cart\models.py changed, reloading.
+2024-05-11 00:18:31,777 - INFO - This is an info message
+2024-05-11 00:18:32,040 - INFO - This is an info message
+2024-05-11 00:19:08,023 - INFO - This is an info message
+2024-05-11 00:19:33,668 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:19:33,745 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:19:35,085 - INFO - This is an info message
+2024-05-11 00:19:35,152 - INFO - This is an info message
+2024-05-11 00:19:56,558 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:19:56,580 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\contact\models.py changed, reloading.
+2024-05-11 00:19:57,866 - INFO - This is an info message
+2024-05-11 00:19:57,886 - INFO - This is an info message
+2024-05-11 00:20:05,912 - INFO - This is an info message
+2024-05-11 00:34:56,566 - INFO - This is an info message
+2024-05-11 00:35:03,922 - WARNING - Not Found: /about_us/statics/img/brands/Realme.png
+2024-05-11 00:35:29,994 - WARNING - Not Found: /about_us/statics/img/brands/Realme.png
+2024-05-11 00:39:15,756 - WARNING - Not Found: /about_us/statics/img/brands/Realme.png
+2024-05-11 00:40:49,254 - WARNING - Not Found: /about_us/statics/img/brands/Realme.png
+2024-05-11 00:40:50,549 - WARNING - Not Found: /about_us/facebook.com
+2024-05-11 00:40:50,783 - WARNING - Not Found: /favicon.ico
+2024-05-11 00:41:11,636 - WARNING - Not Found: /about_us/facebook.com
+2024-05-11 00:41:12,443 - WARNING - Not Found: /about_us/facebook.com
+2024-05-11 00:41:14,308 - WARNING - Not Found: /about_us/facebook.com
+2024-05-11 00:42:00,629 - WARNING - Not Found: /about_us/statics/img/brands/Realme.png
+2024-05-11 00:43:33,085 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\customer\views.py changed, reloading.
+2024-05-11 00:43:33,666 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\customer\views.py changed, reloading.
+2024-05-11 00:43:33,685 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\customer\views.py changed, reloading.
+2024-05-11 00:43:35,494 - INFO - This is an info message
+2024-05-11 00:43:35,745 - INFO - This is an info message
+2024-05-11 00:43:35,796 - INFO - This is an info message
+2024-05-11 00:43:43,235 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cdtt2\settings.py changed, reloading.
+2024-05-11 00:43:43,367 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cdtt2\settings.py changed, reloading.
+2024-05-11 00:43:43,432 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\cdtt2 (1) (1)\cdtt2\settings.py changed, reloading.
+2024-05-11 00:43:44,905 - INFO - This is an info message
+2024-05-11 00:43:45,020 - INFO - This is an info message
+2024-05-11 00:43:45,065 - INFO - This is an info message
+2024-05-11 00:58:14,617 - ERROR - Customer has no linkcounter.
+2024-05-11 01:16:29,408 - INFO - This is an info message
+2024-05-11 01:37:18,838 - INFO - This is an info message
+2024-05-11 01:38:25,408 - ERROR - Customer has no linkcounter.
+2024-05-11 01:43:35,998 - INFO - This is an info message
+2024-05-11 01:50:24,767 - ERROR - Internal Server Error: /product-detail/iPhone 11 64GB/
+2024-05-11 01:53:16,822 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\Group07\cdtt2\product\views.py changed, reloading.
+2024-05-11 01:53:18,419 - INFO - This is an info message
+2024-05-11 01:54:21,323 - ERROR - Internal Server Error: /product-detail/iPhone 11 64GB/
+2024-05-11 01:54:56,410 - ERROR - Internal Server Error: /product-detail/iPhone 11 64GB/
+2024-05-11 01:54:57,280 - ERROR - Internal Server Error: /product-detail/iPhone 11 64GB/
+2024-05-11 01:56:41,168 - INFO - D:\OneDrive - ut.edu.vn\Tài liệu học\MÔN HỌC\Năm 3\Chuyên đề thực tế 2\Group07\cdtt2\product\views.py changed, reloading.
+2024-05-11 01:56:42,691 - INFO - This is an info message

@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Thông tin vận chuyển
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+ {% include 'top_nav.html' %}
+    <!-- thêm header -->
+ {% include 'header.html' %}
+  <!-- CSS tùy chỉnh -->
+  <style>
+    #shippingInfoContainer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    #shippingInfoContainer .article {
+      font-family: Arial, sans-serif;
+    }
+    
+    #shippingInfoContainer .article-title {
+      color: #343a40;
+      font-size: 2em;
+    }
+    
+    #shippingInfoContainer .article-date {
+      color: #6c757d;
+      font-size: 0.8em;
+      margin-bottom: 20px;
+    }
+    
+    #shippingInfoContainer .article-content {
+      color: #495057;
+    }
+    
+    #shippingInfoContainer .article-content h2 {
+      color: #343a40;
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    
+    #shippingInfoContainer .article-content p {
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+  </style>
+
+<body>
+  <div id="shippingInfoContainer" class="container mt-5">
+    <div class="article">
+      <h1 class="article-title">Thông tin vận chuyển</h1>
+      <p class="article-date">Cập nhật lần cuối: 9 tháng 4, 2024</p>
+      <div class="article-content">
+        <p>
+          Khi mua sắm trực tuyến trên trang web bán điện thoại, thông tin vận chuyển đóng vai trò quan trọng để đảm bảo sản phẩm
+          được giao đến khách hàng một cách an toàn và nhanh chóng. Dưới đây là các chi tiết về vận chuyển mà bạn cần biết:
+        </p>
+
+        <h2>Thời gian giao hàng</h2>
+        <p>
+          Thời gian giao hàng có thể thay đổi tùy thuộc vào địa chỉ giao hàng và phương thức vận chuyển được lựa chọn. Thông
+          thường, chúng tôi sẽ cố gắng giao hàng trong khoảng thời gian từ 3 đến 7 ngày làm việc kể từ khi xác nhận đơn hàng. Trong
+          trường hợp có bất kỳ trễ chậm nào, chúng tôi sẽ thông báo cho bạn để bạn có được thông tin cụ thể về thời gian giao hàng.
+        </p>
+
+        <h2>Phương tiện vận chuyển</h2>
+        <p>
+          Chúng tôi sử dụng các dịch vụ vận chuyển đáng tin cậy để đảm bảo sản phẩm của bạn được giao đến một cách an toàn và nhanh chóng. 
+          Chúng tôi có thể sử dụng các dịch vụ vận chuyển như đường bộ, đường hàng không hoặc đường biển, tùy thuộc vào địa chỉ giao hàng 
+          và lựa chọn của bạn.
+        </p>
+
+        <h2>Phí vận chuyển</h2>
+        <p>
+          Phí vận chuyển sẽ được tính dựa trên trọng lượng và kích thước của sản phẩm, cùng với địa chỉ giao hàng. Khi bạn tiến hành thanh 
+          toán đơn hàng, phí vận chuyển sẽ được hiển thị rõ ràng trên trang thanh toán để bạn có thể xem trước trước khi hoàn tất thanh toán.
+        </p>
+
+        <h2>Theo dõi đơn hàng</h2>
+        <p>
+          Để giúp bạn theo dõi đơn hàng của mình, chúng tôi sẽ cung cấp cho bạn một mã theo dõi đơn hàng. Bạn có thể sử dụng mã này trên trang 
+          web của dịch vụ vận chuyển để kiểm tra tình trạng giao hàng và xem vị trí hiện tại của đơn hàng của bạn.
+        </p>
+
+        <h2>Chính sách hoàn trả</h2>
+        <p>
+          Nếu bạn có bất kỳ vấn đề nào với sản phẩm đã nhận, vui lòng liên hệ với chúng tôi ngay lập tức để được hỗ trợ. Chúng tôi sẽ xem xét 
+          trường hợp của bạn và cung cấp thông tin về quy trình hoàn trả và chính sách hoàn trả của chúng tôi.
+        </p>
+
+        <p>
+          Đó là những thông tin cơ bản về vận chuyển mà bạn cần biết khi mua sắm trên trang web bán điện thoại của chúng tôi. Chúng tôi cam kết 
+          cung cấp cho bạn trải nghiệm mua sắm trực tuyến tốt nhất và đảm bảo sản phẩm của bạn được giao đến một cách an toàn và nhanh chóng.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Chính sách đổi trả
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+ {% include 'top_nav.html' %}
+    <!-- thêm header -->
+ {% include 'header.html' %}
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <style>
+    body {
+      padding-top: 60px;
+    }
+
+    h1,
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+    }
+
+    .text-muted {
+      font-size: 14px;
+    }
+
+    ol, ul {
+      margin-left: 0;
+      padding-left: 20px;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <article>
+      <h1>Chính sách đổi trả</h1>
+      <p class="text-muted">Cập nhật lần cuối: 9 tháng 4, 2024</p>
+      <p>
+        Chúng tôi rất hy vọng rằng bạn sẽ hài lòng với mọi sản phẩm bạn mua từ chúng tôi. Tuy nhiên, nếu bạn không hài
+        lòng với sản phẩm đã mua, chúng tôi sẽ cung cấp các quyền đổi trả và hoàn tiền theo chính sách sau đây.
+      </p>
+      <h2>1. Thời gian đổi trả</h2>
+      <p>
+        Bạn có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Để được đổi trả, sản phẩm phải còn nguyên vẹn, không
+        bị hỏng hóc và trong tình trạng hoạt động bình thường.
+      </p>
+      <h2>2. Quy trình đổi trả</h2>
+      <p>
+        Để đổi trả sản phẩm, bạn cần thực hiện các bước sau:
+      </p>
+      <ol>
+        <li>Liên hệ với bộ phận hỗ trợ khách hàng của chúng tôi để thông báo về việc đổi trả.</li>
+        <li>Gói sản phẩm cẩn thận trong hộp gốc và đảm bảo bao bì an toàn.</li>
+        <li>Gửi sản phẩm đến địa chỉ được cung cấp bởi bộ phận hỗ trợ khách hàng.</li>
+        <li>Sau khi nhận được sản phẩm đổi trả, chúng tôi sẽ kiểm tra trạng thái của sản phẩm và tiến hành xử lý đổi trả
+          trong vòng 7 ngày làm việc.</li>
+        <li>Nếu đổi trả được chấp nhận, bạn sẽnhận được hoàn tiền hoặc có thể chọn đổi sản phẩm khác tương đương giá trị.</li>
+      </ol>
+      <h2>3. Điều kiện đổi trả</h2>
+      <p>
+        Để đảm bảo quyền lợi của bạn khi đổi trả sản phẩm, chúng tôi áp dụng các điều kiện sau:
+      </p>
+      <ul>
+        <li>Sản phẩm phải còn nguyên vẹn, không bị hỏng hóc và trong tình trạng hoạt động bình thường.</li>
+        <li>Bạn cần có hóa đơn hoặc chứng từ mua hàng để chứng minh việc mua sản phẩm từ chúng tôi.</li>
+        <li>Sản phẩm phải được trả về trong hộp gốc và bao bì an toàn.</li>
+      </ul>
+      <h2>4. Sản phẩm không được đổi trả</h2>
+      <p>
+        Một số trường hợp sau đây, chúng tôi không chấp nhận đổi trả sản phẩm:
+      </p>
+      <ul>
+        <li>Sản phẩm đã qua sử dụng hoặc bị hư hỏng do sử dụng không đúng cách.</li>
+        <li>Sản phẩm không còn nguyên vẹn, thiếu phụ kiện hoặc bị hỏng do lỗi của người sử dụng.</li>
+        <li>Sản phẩm không có hóa đơn hoặc chứng từ mua hàng.</li>
+      </ul>
+      <h2>5. Liên hệ</h2>
+      <p>
+        Nếu bạn có bất kỳ câu hỏi nào về chính sách đổi trả hoặc cần hỗ trợ, vui lòng liên hệ với bộ phận hỗ trợ khách
+        hàng của chúng tôi:
+      </p>
+      <ul>
+        <li>Email: nnt33@gmail.com</li>
+        <li>Điện thoại: 0123456789</li>
+      </ul>
+    </article>
+  </div>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}

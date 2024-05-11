@@ -1,0 +1,53 @@
+table {
+	border-collapse: collapse;
+	margin: 50px auto; /* Căn giữa bảng */
+	width: 90%;
+	font-size: 14px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* Thêm đường kẻ ngăn cách các cột */
+}
+
+/* Để loại bỏ đường kẻ ở cột cuối cùng */
+th:last-child, td:last-child {
+    border-right: none;
+}
+/* Tăng cường hiệu ứng khi di chuột qua liên kết */
+td a {
+	display: block;
+	margin: 0; /* Loại bỏ lề trái */
+	padding: 10px 0;
+	transition: all .3s ease; /* Làm mượt hiệu ứng chuyển đổi */
+	text-decoration: none; /* Loại bỏ gạch chân */
+	color: #0366d6; /* Màu liên kết */
+}
+
+td a:hover {
+	color: #0056b3; /* Màu khi di chuột qua */
+	text-decoration: underline; /* Gạch chân khi di chuột qua */
+	padding-left: 10px; /* Di chuyển nội dung sang phải */
+}
+
+/* Đổi màu nền cho hàng chẵn và lẻ */
+tr:nth-of-type(odd) {background-color: #f9f9f9;}
+tr:nth-of-type(even) {background-color: #e6e4e4;}
+
+/* Định dạng lại tiêu đề bảng */
+.header-table {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	background: #0C9;
+	padding: 20px 0; /* Thêm đệm trên và dưới */
+	color: white; /* Màu chữ */
+}
+
+/* Định dạng cột */
+.col1 { width: 5%; }
+.col2 { width: 50%; }
+.col3 { width: 25%; }
+.col4 { width: 20%; }

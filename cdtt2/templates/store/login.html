@@ -1,0 +1,21 @@
+<!-- kế thừ html layout -->
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Thế giới điện thoại
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+ {% include 'top_nav.html' %}
+    <!-- thêm header -->
+ {% include 'header.html' %}
+<section class="header">
+    <!-- tạo thẻ thông báo đăng nhập -->
+    <h1>
+        Bạn chưa đăng nhập!
+    </h1>
+</section>
+ <!-- thêm footer -->
+ {% include 'footer.html' %}
+{% endblock %}

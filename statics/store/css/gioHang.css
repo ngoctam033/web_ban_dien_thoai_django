@@ -1,0 +1,48 @@
+/* CSS */
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#product-table thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#product-table th, #product-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#product-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#product-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+#product-table input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

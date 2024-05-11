@@ -1,0 +1,63 @@
+"product_id","name","price","camera","ram","rom","screen","image","battery","brand","cpu","description","origin","os","year"
+23231025,"iPhone 13 128GB","14490000.00","20MP","4","128","6.1","statics/img/products/iPhone 13 128GB.jpg",5000,"Apple","Apple A15 Bionic","NO","US","IOS",2023
+23231026,"iPhone 15 Pro 128GB","26690000.00","20MP","8","128","6.1","statics/img/products/iPhone 15 Pro 128GB.jpg",5000,"Apple","Apple A17 Pro","NO","US","IOS",2023
+23231027,"iPhone 15 Pro Max 256GB","30990000.00","20MP","8","256","6.7","statics/img/products/iPhone 15 Pro Max 256GB.jpg",5000,"Apple","Apple A17 Pro","NO","US","IOS",2023
+23231028,"iPhone 11 64GB","9990000.00","20MP","4","64","6.1","statics/img/products/iPhone 11 64GB.jpg",5000,"Apple","Apple A13 Bionic","NO","US","IOS",2023
+23231029,"iPhone 12 64GB","12090000.00","20MP","4","64","6.1","statics/img/products/iPhone 12 64GB.jpg",5000,"Apple","Apple A14 Bionic","NO","US","IOS",2023
+23231049,"iPhone 14 Pro Max 128GB","27390000.00","20MP","6","128","6.7","statics/img/products/iPhone 14 Pro Max 128GB.jpg",5000,"Apple","Apple A16 Bionic","NO","US","IOS",2023
+23241006,"Samsung Galaxy A04s","3290000.00","20MP","4","64","6.5","statics/img/products/Samsung Galaxy A04s.jpg",5000,"Samsung","Exynos 850","NO","Korea","Android",2023
+23241007,"Samsung Galaxy A05s 128GB","3690000.00","20MP","4","128","6.7","statics/img/products/Samsung Galaxy A05s 128GB.jpg",5000,"Samsung","Snapdragon 680","NO","Korea","Android",2023
+23241008,"Samsung Galaxy A15 128GB","4790000.00","20MP","8","128","6.5","statics/img/products/Samsung Galaxy A15 128GB.jpg",5000,"Samsung","MediaTek G99","NO","Korea","Android",2023
+23241009,"Samsung Galaxy A23 5G","4490000.00","20MP","4","128","6.6","statics/img/products/Samsung Galaxy A23 5G.jpg",5000,"Samsung","Snapdragon 695 5G","NO","Korea","Android",2023
+23241010,"Samsung Galaxy A34 5G","7490000.00","20MP","8","128","6.6","statics/img/products/Samsung Galaxy A34 5G.jpg",5000,"Samsung","MediaTek Dimensity 1080","NO","Korea","Android",2023
+23241011,"Samsung Galaxy A54 5G 256GB","9790000.00","20MP","8","256","6.4","statics/img/products/Samsung Galaxy A54 5G 256GB.jpg",5000,"Samsung","Exynos 1380","NO","Korea","Android",2023
+23241012,"Samsung Galaxy S22 5G 128GB","12490000.00","20MP","8","128","6.1","statics/img/products/Samsung Galaxy S22 5G 128GB.jpg",5000,"Samsung","Snapdragon 8 Gen 1","NO","Korea","Android",2023
+23241013,"Samsung Galaxy S23 Ultra 5G 256GB","24990000.00","20MP","8","256","6.8","statics/img/products/Samsung Galaxy S23 Ultra 5G 256GB.jpg",5000,"Samsung","Snapdragon 8 Gen 2","NO","Korea","Android",2023
+23241014,"Samsung Galaxy S24 5G 256GB","22990000.00","20MP","8","256","6.2","statics/img/products/Samsung Galaxy S24 5G 256GB.jpg",5000,"Samsung","Exynos 2400","NO","Korea","Android",2023
+23241015,"Samsung Galaxy Z Flip4 5G 128GB","12990000.00","20MP","8","128","6.7","statics/img/products/Samsung Galaxy Z Flip4 5G 128GB.jpg",5000,"Samsung","Snapdragon 8+ Gen 1","NO","Korea","Android",2023
+23241016,"Samsung Galaxy Z Flip5 5G 256GB","21990000.00","20MP","8","256","6.7","statics/img/products/Samsung Galaxy Z Flip5 5G 256GB.jpg",5000,"Samsung","Snapdragon 8 Gen 2","NO","Korea","Android",2023
+23241041,"Samsung Galaxy M34 5G 128GB","7490000.00","20MP","8","128","6.5","statics/img/products/Samsung Galaxy M34 5G 128GB.jpg",5000,"Samsung","Exynos 1280","NO","Korea","Android",2023
+23241042,"Samsung Galaxy S23 Plus 5G 256GB","17990000.00","20MP","8","256","6.6","statics/img/products/Samsung Galaxy S23 Plus 5G 256GB.jpg",5000,"Samsung","Snapdragon 8 Gen 2","NO","Korea","Android",2023
+23241043,"Samsung Galaxy S24 Ultra 5G 256GB","33990000.00","20MP","12","256","6.8","statics/img/products/Samsung Galaxy S24 Ultra 5G 256GB.jpg",5000,"Samsung","Snapdragon 8 Gen 3","NO","Korea","Android",2023
+23241044,"Samsung Galaxy Z Fold5 5G 256GB","36990000.00","20MP","12","256","7.6","statics/img/products/Samsung Galaxy Z Fold5 5G 256GB.jpg",5000,"Samsung","Snapdragon 8 Gen 2","NO","Korea","Android",2023
+23241059,"Samsung Galaxy A05 128GB","3090000.00","20MP","4","128","6.7","statics/img/products/Samsung Galaxy A05 128GB.jpg",5000,"Samsung","Helio G85","NO","Korea","Android",2023
+23241060,"Samsung Galaxy A14 4G","3690000.00","20MP","4","128","6.6","statics/img/products/Samsung Galaxy A14 4G.jpg",5000,"Samsung","Exynos 850","NO","Korea","Android",2023
+23241061,"Samsung Galaxy A25 5G 128GB","6590000.00","20MP","6","128","6.5","statics/img/products/Samsung Galaxy A25 5G 128GB.jpg",5000,"Samsung","Exynos 1280","NO","Korea","Android",2023
+23251020,"Xiaomi 13T 12GB-256GB","11490000.00","20MP","12","256","6.7","statics/img/products/Xiaomi 13T 12GB-256GB.jpg",5000,"Xiaomi","Dimensity 8200 Ultra","NO","China","Android",2023
+23251021,"Xiaomi Redmi 12C 4GB-64GB","2490000.00","20MP","4","64","6.71","statics/img/products/Xiaomi Redmi 12C 4GB-64GB.jpg",5000,"Xiaomi","Helio G85","NO","China","Android",2023
+23251022,"Xiaomi Redmi 13C 6GB-128GB","3290000.00","20MP","6","128","6.74","statics/img/products/Xiaomi Redmi 13C 6GB-128GB.jpg",5000,"Xiaomi","Helio G85","NO","China","Android",2023
+23251023,"Xiaomi Redmi Note 11 Pro 8GB - 128GB","4990000.00","20MP","8","128","6.67","statics/img/products/Xiaomi Redmi Note 11 Pro 8GB - 128GB.jpg",5000,"Xiaomi","MediaTek Helio G96","NO","China","Android",2023
+23251024,"Xiaomi Redmi Note 13 Pro+ 5G 8GB-256GB","10490000.00","20MP","8","256","6.67","statics/img/products/Xiaomi Redmi Note 13 Pro+ 5G 8GB-256GB.jpg",5000,"Xiaomi","Dimensity 7200 Ultra","NO","China","Android",2023
+23251046,"Xiaomi Poco M6 Pro 8GB-256GB","5990000.00","20MP","8","256","6.67","statics/img/products/Xiaomi Poco M6 Pro 8GB-256GB.jpg",5000,"Xiaomi","MediaTek Helio G99-Ultra","NO","China","Android",2023
+23251047,"Xiaomi Redmi A2 2GB-32GB","1990000.00","20MP","2","32","6.52","statics/img/products/Xiaomi Redmi A2 2GB-32GB.jpg",5000,"Xiaomi","MediaTek Helio G36","NO","China","Android",2023
+23251048,"Xiaomi Redmi Note 13 6GB-128GB","4590000.00","20MP","6","128","6.67","statics/img/products/Xiaomi Redmi Note 13 6GB-128GB.jpg",5000,"Xiaomi","Snapdragon 685","NO","China","Android",2023
+23261036,"OPPO A18 4GB-128GB","3990000.00","20MP","4","128","6.56","statics/img/products/OPPO A18 4GB-128GB.jpg",5000,"Oppo","Helio G85","NO","China","Android",2023
+23261037,"OPPO A57 4GB-128GB","3890000.00","20MP","4","128","6.56","statics/img/products/OPPO A57 4GB-128GB.jpg",5000,"Oppo","Helio G35","NO","China","Android",2023
+23261038,"OPPO A77s 8GB-128GB","4990000.00","20MP","8","128","6.56","statics/img/products/OPPO A77s 8GB-128GB.jpg",5000,"Oppo","Snapdragon 680","NO","China","Android",2023
+23261039,"OPPO Find N3 Flip 5G 12GB-256GB","22990000.00","20MP","12","256","6.8","statics/img/products/OPPO Find N3 Flip 5G 12GB-256GB.jpg",5000,"Oppo","Mediatek Dimensity 9200 5G","NO","China","Android",2023
+23261040,"OPPO Reno8 T 4G 256GB","7490000.00","20MP","8","256","6.4","statics/img/products/OPPO Reno8 T 4G 256GB.jpg",5000,"Oppo","MediaTek Helio G99","NO","China","Android",2023
+23261055,"OPPO A17k 3GB-64GB","2790000.00","20MP","3","64","6.56","statics/img/products/OPPO A17k 3GB-64GB.jpg",5000,"Oppo","Helio G35","NO","China","Android",2023
+23261056,"OPPO A58 6GB-128GB","4990000.00","20MP","6","128","6.7","statics/img/products/OPPO A58 6GB-128GB.jpg",5000,"Oppo","Helio G85","NO","China","Android",2023
+23261057,"OPPO A78 8GB-256GB","6990000.00","20MP","8","256","6.4","statics/img/products/OPPO A78 8GB-256GB.jpg",5000,"Oppo","Snapdragon 680","NO","China","Android",2023
+23261058,"OPPO Reno11 F 5G 8GB-256GB","0.00","20MP","8","256","6.7","statics/img/products/OPPO Reno11 F 5G 8GB-256GB.jpg",5000,"Oppo","MediaTek Dimensity 7050 5G","NO","China","Android",2023
+23271017,"Vivo V25e 8GB-128GB","6490000.00","20MP","8","128","6.44","statics/img/products/Vivo V25e 8GB-128GB.jpg",5000,"Vivo","MediaTek Helio G99","NO","China","Android",2023
+23271018,"Vivo Y16 4GB-128GB","3290000.00","20MP","4","128","6.51","statics/img/products/Vivo Y16 4GB-128GB.jpg",5000,"Vivo","Helio P35","NO","China","Android",2023
+23271019,"Vivo Y22s 8GB-128GB","4990000.00","20MP","8","128","6.55","statics/img/products/Vivo Y22s 8GB-128GB.jpg",5000,"Vivo","Snapdragon 680","NO","China","Android",2023
+23271045,"Vivo Y35 8GB-128GB","4990000.00","20MP","8","128","6.58","statics/img/products/Vivo Y35 8GB-128GB.jpg",5000,"Vivo","Snapdragon 680","NO","China","Android",2023
+23281000,"realme C60 4GB-64GB","0.00","20MP","4","64","6.74","statics/img/products/realme C60 4GB-64GB.jpg",5000,"Realme","Unisoc T612","NO","China","Android",2023
+23281001,"realme C30s 3GB-64GB","2290000.00","20MP","3","64","6.5","statics/img/products/realme C30s 3GB-64GB.jpg",5000,"Realme","Unisoc SC9863A1","NO","China","Android",2023
+23281005,"Realme C51 6GB-256GB","3990000.00","20MP","6","256","6.74","statics/img/products/Realme C51 6GB-256GB.jpg",5000,"Realme","Unisoc T612","NO","China","Android",2023
+23281050,"realme C55 6GB-128GB","4190000.00","20MP","6","128","6.7","statics/img/products/realme C55 6GB-128GB.jpg",5000,"Realme","MediaTek Helio G88","NO","China","Android",2023
+23291034,"Nokia 105 DS Pro 4G","680000.00","20MP","48","128","1.77","statics/img/products/Nokia 105 DS Pro 4G.jpg",5000,"Nokia","Unisoc T107","NO","VN","Android",2023
+23291035,"Nokia 110 DS 4G","620000.00","20MP","48","128","1.8","statics/img/products/Nokia 110 DS 4G.jpg",5000,"Nokia","Unisoc T107","NO","VN","Android",2023
+23311002,"Masstel Fami 60 4G","750000.00","20MP","16","24","2","statics/img/products/Masstel Fami 60 4G.jpg",5000,"Masstel","Unisoc UIS8910","NO","VN","Android",2023
+23311003,"Masstel Fami 60S 4G","700000.00","20MP","1","128","2","statics/img/products/Masstel Fami 60S 4G.jpg",5000,"Masstel",NULL,"NO","VN","Android",2023
+23311004,"Masstel izi 30 4G","600000.00","20MP","48","128","2.4","statics/img/products/Masstel izi 30 4G.jpg",5000,"Masstel","Unisoc UMS9117","NO","VN","Android",2023
+23311052,"Masstel Fami 12 4G","650000.00","20MP","48","256","1.77","statics/img/products/Masstel Fami 12 4G.jpg",5000,"Masstel","Unisoc T107","NO","VN","Android",2023
+23311053,"Masstel Izi 15 4G","390000.00","20MP","48","128","1.77","statics/img/products/Masstel Izi 15 4G.jpg",5000,"Masstel",NULL,"NO","VN","Android",2023
+23311054,"Masstel izi T2 4G","500000.00","20MP","48","128","2.4","statics/img/products/Masstel izi T2 4G.jpg",5000,"Masstel","Unisoc T107","NO","VN","Android",2023
+23321030,"Honor 90 Lite 5G 8GB-256GB","5990000.00","20MP","8","256","6.7","statics/img/products/Honor 90 Lite 5G 8GB-256GB.jpg",5000,"Honor","MediaTek Dimensity 6020","NO","China","Android",2023
+23321031,"Honor X5 Plus 4GB-64GB","2490000.00","20MP","4","64","6.56","statics/img/products/Honor X5 Plus 4GB-64GB.jpg",5000,"Honor","MediaTek Helio G36","NO","China","Android",2023
+23321032,"Honor X6A 4GB-128GB","2990000.00","20MP","4","128","6.56","statics/img/products/Honor X6A 4GB-128GB.jpg",5000,"Honor","MediaTek Helio G36MediaTek Helio G36","NO","China","Android",2023
+23321033,"Honor X8A 8GB-128GB","3990000.00","20MP","8","128","6.7","statics/img/products/Honor X8A 8GB-128GB.jpg",5000,"Honor","MediaTek Helio G88","NO","China","Android",2023
+23321051,"Honor X9B 5G 12GB-256GB","8990000.00","20MP","12","256","6.78","statics/img/products/Honor X9B 5G 12GB-256GB.jpg",5000,"Honor","Snapdragon 6 Gen 1","NO","China","Android",2023

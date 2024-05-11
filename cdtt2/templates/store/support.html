@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+<!-- thay đổi title -->
+{% block title %}
+Hỗ trợ
+{% endblock %}
+<!-- nội dung trong thẻ body -->
+{% block content %}
+<!-- thêm topnav -->
+{% include 'top_nav.html' %}
+<!-- thêm header -->
+{% include 'header.html' %}
+
+<style>
+  .container.mt-4 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .container.mt-4 h1 {
+    color: #343a40;
+    font-size: 2em;
+  }
+
+  .container.mt-4 p {
+    color: #495057;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .container.mt-4 ul {
+    list-style-type: none;
+  }
+
+  .container.mt-4 ul li {
+    color: #495057;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body>
+  <div class="container mt-4">
+    <h1>Hỗ trợ</h1>
+    <p>
+      Chào mừng bạn đến với trang hỗ trợ của chúng tôi. Để liên hệ với chúng tôi, vui lòng sử dụng thông tin liên hệ
+      dưới
+      đây:
+    </p>
+    <ul>
+      <li>Email: nnt33@gmail.com</li>
+      <li>Số điện thoại: 0123456789</li>
+      <li>Địa chỉ:
+        <br />
+        Cơ sở 1: Số 2, Đường D3, Phường 25, Quận Bình Thạnh, TP.HCM<br />
+        Cơ sở 2: Số 17, Đường Trần Não, Phường Bình An, Quận 2, TP.HCM<br />
+        Cơ sở 3: Đường Tô Ký, Phường Tân Chánh Hiệp, Quận 12, TP.HCM<br />
+        Cơ sở 4: Số 5/1, Đường Nguyễn Thái Học, Phường 7, Thành phố Vũng Tàu<br /><br />
+      </li>
+    </ul>
+  </div>
+</body>
+
+{% include 'footer.html' %}
+{% endblock %}
